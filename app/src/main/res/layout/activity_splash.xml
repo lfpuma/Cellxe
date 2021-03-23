@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_powered"
+        fontPath="fonts/roboto.light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="42dp"
+        android:gravity="center"
+        android:text="@string/powered_by_sunny"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+</FrameLayout>

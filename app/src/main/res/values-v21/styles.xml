@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="OrangeButton" parent="AppTheme">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="colorButtonNormal">@color/colorOrange</item>
+        <item name="android:colorButtonNormal">@color/colorOrange</item>
+    </style>
+
+    <style name="AuthorizationTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+</resources>

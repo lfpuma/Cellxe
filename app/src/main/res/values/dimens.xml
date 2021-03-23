@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_edit_text_default_end_padding">10dp</dimen>
+    <dimen name="clear_button_size">25dp</dimen>
+    <dimen name="form_field_height">43dp</dimen>
+    <dimen name="authorization_logo_margin_top">90dp</dimen>
+    <dimen name="dialog_view_edit_text_margin">20dp</dimen>
+    <dimen name="post_photo_height">190dp</dimen>
+    <dimen name="input_comment_left_margin">20dp</dimen>
+    <dimen name="input_comment_right_margin">40dp</dimen>
+    <dimen name="output_comment_left_margin">40dp</dimen>
+    <dimen name="output_comment_right_margin">20dp</dimen>
+    <dimen name="authorization_edit_text_icon_size">20dp</dimen>
+    <dimen name="btn_width">180dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+</resources>

@@ -1,0 +1,1 @@
+include ':app', ':keyboardvisibilityevent', ':titlevaluespinner', ':cropper', ':materialspinner'

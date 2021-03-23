@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "860632306109",
+    "firebase_url": "https://cellexchange-e5f86.firebaseio.com",
+    "project_id": "cellexchange-e5f86",
+    "storage_bucket": "cellexchange-e5f86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860632306109:android:2a4ff0a7cee0e89f",
+        "android_client_info": {
+          "package_name": "exchange.cell.cellexchange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860632306109-jgo48crmpcdq08f30p0okcoeutmpk1co.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "exchange.cell.cellexchange",
+            "certificate_hash": "83dfffa8e154f4b527cab0d54da92b36f4bd925e"
+          }
+        },
+        {
+          "client_id": "860632306109-52hpdt60ftqv8sqsnhhkcdktg6c24k70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5XoEGlQOomFuECFn9-PH1-qkT60LaHsA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860632306109-52hpdt60ftqv8sqsnhhkcdktg6c24k70.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "860632306109-nkcerubihm547c3ot537h8ipn7b6vjgo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cell.exchange.CellExchange"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

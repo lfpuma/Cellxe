@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">CellXE</string>
+    <string name="search">Search</string>
+    <string name="share">Share</string>
+    <string name="comment">Comment</string>
+    <string name="like">Like</string>
+    <string name="details">Details</string>
+    <string name="profile">Profile</string>
+    <string name="new_post">New post</string>
+    <string name="post_type">Post type</string>
+    <string name="i_want_to">I want to</string>
+    <string name="make_and_model"><![CDATA[Make & model]]></string>
+    <string name="category">Category</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="model_number">Model number</string>
+    <string name="more_info">More info</string>
+    <string name="detail">Detail</string>
+    <string name="stock_type">Stock type</string>
+    <string name="storage_capacity">Storage capacity</string>
+    <string name="color">Color</string>
+    <string name="condition">Condition</string>
+    <string name="specification">Specification</string>
+    <string name="qty">Qty</string>
+    <string name="description">Description</string>
+    <string name="add_photo">Add photo</string>
+    <string name="create">Create</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="verify_password">Verify password</string>
+    <string name="have_account">Have an account?</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password_dialog_message">Please enter your email to reset your password</string>
+    <string name="fill_in_this_form_to_complete_registration">Fill in this form to complete registration</string>
+    <string name="full_name">Full name</string>
+    <string name="phone">Phone</string>
+    <string name="country">Country</string>
+    <string name="region">Region</string>
+    <string name="freezone">Freezone</string>
+    <string name="please_wait">Please, wait…</string>
+    <string name="message_email_validation_failed">Enter your email</string>
+    <string name="message_password_validation_failed">Enter your password</string>
+    <string name="ok">OK</string>
+    <string name="message_login_failed">Could not log in. Verify that you entered the correct data and try again.</string>
+    <string name="message_no_posts">No posts</string>
+    <string name="message_error_loading">Error loading. Try again later</string>
+    <string name="message_forgot_password_success">Password reset link sent to your email. Please check your email</string>
+    <string name="message_reset_password_failed">Reset password was failed. Try again later</string>
+    <string name="logout">Logout</string>
+    <string name="message_password_must_be_at_least_6_simbols">Password must be at least 6 simbols</string>
+    <string name="message_password_not_equals">Passwords not equals</string>
+    <string name="message_registration_success">Your account created successfully. We have sent you an email, Please follow the instructions in the email to activate your account.</string>
+    <string name="message_registration_failed">Registration has failed. Try again later</string>
+    <string name="message_full_name_cannot_be_blank">Full Name cannot be blank.</string>
+    <string name="message_mobile_cannot_be_blank">Mobile cannot be blank.</string>
+    <string name="message_country_cannot_be_blank">Country cannot be blank.</string>
+    <string name="message_region_cannot_be_blank">Region cannot be blank.</string>
+    <string name="message_freezone_cannot_be_blank">Freezone cannot be blank.</string>
+    <string name="message_like_notification_title" formatted="false">Your post is %1$s</string>
+    <string name="message_like_notification_message" formatted="false">%1$s %2$s your post %3$s</string>
+    <string name="message_post_notification_title" formatted="false">Added a new post</string>
+    <string name="message_post_notification_message" formatted="false">%1$s added a new post %2$s</string>
+    <string name="wts">WTS</string>
+    <string name="wtb">WTB</string>
+    <string name="service">Service</string>
+    <string name="message">Message</string>
+    <string name="message_create_post_failed">Create post failed. Try again later</string>
+    <string name="message_comment_notification_title">You received a comment</string>
+    <string name="message_comment_notification_message" formatted="false">%1$s commented on your Post %2$s</string>
+    <string name="comments">Comments</string>
+    <string name="message_can_not_be_empty">Message can not be empty</string>
+    <string name="message_send_message_failed">Send message failed. Try again later</string>
+    <string name="powered_by_sunny">Powered by Sunny</string>
+    <string-array name="post_types">
+        <item>sell</item>
+        <item>buy</item>
+    </string-array>
+</resources>

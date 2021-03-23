@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/post_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ua.com.onyx.titlevaluespinner.TitleValueSpinner
+                app:bottomLineColor="@color/colorPrimary"
+                app:title="@string/i_want_to"
+                app:values="@array/post_types"
+                android:id="@+id/spinner_post_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/make_and_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ua.com.onyx.titlevaluespinner.TitleValueSpinner
+                app:bottomLineColor="@color/colorPrimary"
+                app:title="@string/category"
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <ua.com.onyx.titlevaluespinner.TitleValueSpinner
+                app:bottomLineColor="@color/colorPrimary"
+                app:title="@string/make"
+                android:id="@+id/spinner_make"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <ua.com.onyx.titlevaluespinner.TitleValueSpinner
+                app:bottomLineColor="@color/colorPrimary"
+                app:title="@string/model"
+                android:id="@+id/spinner_model"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <EditText
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/colorBlack"
+                android:background="@null"
+                android:textSize="14sp"
+                android:id="@+id/et_model_number"
+                android:hint="@string/model_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/more_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ua.com.onyx.titlevaluespinner.TitleValueSpinner
+                app:bottomLineColor="@color/colorPrimary"
+                app:title="@string/stock_type"
+                android:id="@+id/spinner_stock_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <EditText
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="14sp"
+                android:background="@null"
+                android:id="@+id/et_color"
+                android:hint="@string/color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="@string/storage_capacity"
+                android:id="@+id/et_storage_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <ua.com.onyx.titlevaluespinner.TitleValueSpinner
+                app:bottomLineColor="@color/colorPrimary"
+                app:title="@string/condition"
+                android:id="@+id/spinner_condition"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <ua.com.onyx.titlevaluespinner.TitleValueSpinner
+                app:bottomLineColor="@color/colorPrimary"
+                app:title="@string/specification"
+                android:id="@+id/spinner_specification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <EditText
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="14sp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:background="@null"
+                android:id="@+id/et_qty"
+                android:hint="@string/qty"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+            
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:textColorHint="@color/colorBlack"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                android:background="@null"
+                android:gravity="top"
+                android:id="@+id/et_description"
+                android:hint="@string/description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <View
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:text="@string/add_photo"
+                android:id="@+id/tv_add_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height" />
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_attach_photo"
+                android:layout_width="match_parent"
+                android:layout_height="190dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:theme="@style/BlueButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="70dp"
+                android:text="@string/create"
+                android:id="@+id/btn_create"
+                android:layout_width="150dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

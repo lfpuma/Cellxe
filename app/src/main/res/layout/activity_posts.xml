@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:dividerHeight="10dp"
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        fontPath="fonts/roboto.light.ttf"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:text="@string/message_no_posts"
+        android:id="@+id/tv_empty"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        fontPath="fonts/roboto.light.ttf"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:text="@string/message_error_loading"
+        android:id="@+id/tv_error"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_new_post"
+        android:src="@drawable/ic_edit"
+        app:fabSize="normal"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/list_view"
+        app:layout_anchorGravity="right|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetEnd="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/iv_profile"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_profile" />
+
+                <ImageView
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/iv_filter"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_filter" />
+
+                <android.support.v7.widget.CardView
+                    android:animateLayoutChanges="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/iv_profile"
+                    android:layout_toStartOf="@id/iv_filter">
+
+                    <EditText
+                        fontPath="fonts/roboto.light.ttf"
+                        android:id="@+id/et_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_search"
+                        android:hint="@string/search"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:layout_marginEnd="@dimen/search_edit_text_default_end_padding"
+                        android:layout_marginStart="10dp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_clear_search"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="end|center"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:layout_width="@dimen/clear_button_size"
+                        android:layout_height="@dimen/clear_button_size" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

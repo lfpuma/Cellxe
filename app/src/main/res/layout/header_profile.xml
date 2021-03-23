@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="110dp"
+        android:id="@+id/profile_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/avatar_space"
+                android:layout_width="142dp"
+                android:layout_height="71dp"
+                android:layout_marginRight="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="0dp" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_wts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp"
+                app:layout_constraintRight_toLeftOf="@+id/avatar_space"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintHorizontal_bias="0.515" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tv_wtb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintLeft_toRightOf="@+id/avatar_space"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatar_space" />
+
+            <TextView
+                fontPath="fonts/roboto.bold.ttf"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:id="@+id/tv_trading_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name"
+                app:layout_constraintHorizontal_bias="0.501" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:scaleType="centerInside"
+                android:id="@+id/iv_flag"
+                app:actualImageScaleType="fitCenter"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                app:layout_constraintLeft_toRightOf="@+id/tv_trading_name"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintTop_toTopOf="@+id/tv_trading_name"
+                android:layout_marginTop="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_trading_name"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                fontPath="fonts/roboto.light.ttf"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:id="@+id/tv_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_trading_name" />
+
+            <TextView
+                fontPath="fonts/roboto.light.ttf"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:id="@+id/tv_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_role" />
+
+            <TextView
+                fontPath="fonts/roboto.light.ttf"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_phone_black"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_info"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                fontPath="fonts/roboto.light.ttf"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_email_black"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:elevation="10dp"
+        android:layout_marginTop="39dp"
+        android:layout_gravity="center_horizontal"
+        app:roundAsCircle="true"
+        app:actualImageScaleType="focusCrop"
+        app:placeholderImage="@drawable/ic_no_avatar_profile"
+        android:id="@+id/iv_avatar"
+        android:layout_width="142dp"
+        android:layout_height="142dp" />
+
+</FrameLayout>

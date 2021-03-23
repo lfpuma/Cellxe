@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/fill_in_this_form_to_complete_registration"
+                android:textSize="12sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                app:hintTextAppearance="@style/FormTextInputLayoutHintAppearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                app:hintTextAppearance="@style/FormTextInputLayoutHintAppearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                app:ms_alignLabels="false"
+                app:ms_alwaysShowFloatingLabel="true"
+                app:ms_enableErrorLabel="false"
+                app:ms_floatingLabelText="@string/country"
+                app:ms_hint="@string/country"
+                app:ms_hintColor="@color/colorFormHint" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                app:ms_alignLabels="false"
+                app:ms_alwaysShowFloatingLabel="true"
+                app:ms_enableErrorLabel="false"
+                app:ms_floatingLabelText="@string/region"
+                app:ms_hint="@string/region"
+                app:ms_hintColor="@color/colorFormHint" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_freezone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:text="Are you freezone Company?"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_freezone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                app:ms_alignLabels="false"
+                app:ms_alwaysShowFloatingLabel="true"
+                app:ms_enableErrorLabel="false"
+                app:ms_floatingLabelText="@string/freezone"
+                app:ms_hint="@string/freezone"
+                app:ms_hintColor="@color/colorFormHint" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="70dp"
+                android:layout_marginTop="70dp"
+                android:text="@string/sign_up"
+                android:theme="@style/BlueButton" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

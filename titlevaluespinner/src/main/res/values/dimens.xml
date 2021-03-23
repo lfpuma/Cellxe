@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_value_spinner_image_size">15dp</dimen>
+    <dimen name="title_value_spinner_title_text_size">14sp</dimen>
+    <dimen name="title_value_spinner_value_text_size">14sp</dimen>
+    <dimen name="title_value_spinner_bottom_line_height">1dp</dimen>
+</resources>
